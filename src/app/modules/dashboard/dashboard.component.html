@@ -1,0 +1,59 @@
+<div class="div-main">
+  <div class="title-page">
+    <h2 style="color: #2eb165">Dashboard</h2>
+  </div>
+
+  <div>
+    <div style="overflow-x: hidden">
+      <div class="row">
+        <div class="col-4">
+          <div
+            class="card radius-10 border-start border-0 border-3 border-info cardDash"
+          >
+            <div class="card-body">
+              <div class="d-flex align-items-center">
+                <div>
+                  <p class="mb-0 text-secondary">Total User</p>
+                </div>
+                <div
+                  class="widgets-icons-2 rounded-circle bg-gradient-ohhappiness text-white ms-auto"
+                >
+                  <span class="nb">{{ users?.length }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-8 pie" style="margin-top: 30px">
+          <div class="chartPie card">
+            <h3 class="card-title">Utilisateur Gouvernerat</h3>
+            <div class="chartBar">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 pie" style="margin-top: 30px">
+          <div class="chartPie card">
+            <h3 class="card-title">Utilisateur Genre</h3>
+            <div class="card-body">
+              <canvas id="myPieTwo"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 pie" style="margin-top: 30px">
+          <div class="myPieAge card">
+            <h3 class="card-title">Utilisateur Age</h3>
+            <div class="chartBar">
+              <canvas id="myPieAge"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
