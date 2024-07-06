@@ -20,13 +20,13 @@
             <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#gouvernerats">Gouvernements</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="login()">Connexion</a>
+            <a class="nav-link" style="cursor: pointer;" (click)="login()">Connexion</a>
           </li>
         </ul>
       </div>
@@ -51,176 +51,127 @@
             Échappant aux foules et aux embouteillages.
             
           </p>
-          <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+          <a class="btn btn-primary btn-xl"  (click)="login()" style="display: inline-block;">Connectez-vous</a>
         </div>
       </div>
     </div>
   </header>
   <!-- About-->
+   <!-- Description-->
+  <section class="page-section" id="description">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <h2 class="mt-0" style="text-align: center;">Inscrivez vous !</h2>
+        <div style="width: 100%;" class="col-lg-8 col-xl-6 text-center">
+          <hr class="divider" />
+          <p>
+            Inscrivez-vous en quelques instants dans l'application URBAN MOVE afin d’avoir accès à des milliers de trottinettes électriques de notre partenaire TIER en France et partout dans le monde. Choisissez à tout moment le moyen de transport qui correspond le mieux à vos besoins actuels et réservez-le avec un seul clic.</p>
+        </div>
+      </div>
+            </div>
+  </section>
 
   <!-- Services-->
   <section class="page-section" id="services">
-    <div class="container px-4 px-lg-5">
-      <h2 class="text-center mt-0">At Your Service</h2>
-      <hr class="divider" />
-      <div class="row gx-4 gx-lg-5">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-            <h3 class="h4 mb-2">Sturdy Themes</h3>
-            <p class="text-muted mb-0">
-              Our themes are updated regularly to keep them bug free!
-            </p>
-          </div>
+    <div class="container">
+        <h3 class="text-center mt-0">Location de trottinettes électriques : COMMENT ÇA MARCHE ?</h3>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center text-center p-3">
+                <div class="mt-5">
+                    <img src="../../../assets/img/Vorsichtig_fahren_285.png" width="250" class="bi-gem fs-1 text-primary mb-4" alt="Conduire en Sécurité">
+                    <h3 class="h5 mb-3">CONDUIRE EN SÉCURITÉ</h3>
+                    <p class="text-muted mb-4">
+                        Pour votre sécurité, nous vous recommandons de toujours porter un casque quand vous conduisez. Soyez toujours attentif quand vous conduisez, respectez le code de la route et faites attention aux autres usagers de la route.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center text-center p-3">
+                <div class="mt-5">
+                    <img src="../../../assets/img/Scooter_starten_285.png" width="250" class="bi-gem fs-1 text-primary mb-4" alt="Démarrer">
+                    <h3 class="h5 mb-3">DÉMARRER</h3>
+                    <p class="text-muted mb-4" style="width: 100%;">
+                        Une fois que vous avez commencé la location dans l’application, mettez un pied sur la trottinette et donnez un coup d’élan avec l’autre comme avec un scooter. Positionnez ensuite les deux pieds sur la trottinette.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center text-center p-3">
+                <div class="mt-5">
+                    <img src="../../../assets/img/Fahrt_beginnen_285.png" width="250" class="bi-gem fs-1 text-primary mb-4" alt="Conduire">
+                    <h3 class="h5 mb-3">CONDUIRE</h3>
+                    <p class="text-muted mb-4" style="width: 100%;">
+                        Utilisez le levier d'accélérateur sur la poignée de droite pour prendre de la vitesse. Utilisez le frein sur la poignée ou le frein à pied sur la roue arrière pour réduire votre vitesse ou vous arrêter.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center text-center p-3">
+                <div class="mt-5">
+                    <img src="../../../assets/img/Fahrt_beenden_285.png" width="250" class="bi-gem fs-1 text-primary mb-4" alt="Terminer la Location">
+                    <h3 class="h5 mb-3">TERMINER LA LOCATION</h3>
+                    <p class="text-muted mb-4" style="width: 100%;">
+                        Après le trajet, veuillez garer la trottinette électrique en toute sécurité
+                        à l’intérieur du secteur d'activité. Respectez les règles de stationnement 
+                        en vigueur et n'obstruez pas le passage aux piétons ou aux autres usagers de la route.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-            <h3 class="h4 mb-2">Up to Date</h3>
-            <p class="text-muted mb-0">
-              All dependencies are kept current to keep things fresh.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-            <h3 class="h4 mb-2">Ready to Publish</h3>
-            <p class="text-muted mb-0">
-              You can use this design as is, or you can make changes!
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-            <h3 class="h4 mb-2">Made with Love</h3>
-            <p class="text-muted mb-0">
-              Is it really open source if it's not made with love?
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Portfolio-->
-  <div id="portfolio">
+</section>
+
+<h3 class="text-center mt-0">Les trotinettes sont disponibles chez URBAN MOVE dans les villes suivantes</h3>
+<hr class="divider" />
+
+  <!-- GOUVERNEMENTS-->
+  <div id="gouvernerats">
     <div class="container-fluid p-0">
       <div class="row g-0">
         <div class="col-lg-4 col-sm-6">
-          <a
-            class="portfolio-box"
-            href="assets/img/portfolio/fullsize/1.jpg"
-            title="Project Name"
-          >
+         
             <img
               class="img-fluid"
-              src="assets/img/portfolio/thumbnails/1.jpg"
+              style="height: fit-content;width: fit-content;"
+              src="assets/img/portfolio/thumbnails/99.jpg"
               alt="..."
             />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Category</div>
-              <div class="project-name">Project Name</div>
-            </div>
-          </a>
+            <h4 class="h5 mb-3" style="display: block;text-align: center;color: #000;">Manouba</h4>
+          
+        
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a
-            class="portfolio-box"
-            href="assets/img/portfolio/fullsize/2.jpg"
-            title="Project Name"
-          >
+          
             <img
               class="img-fluid"
-              src="assets/img/portfolio/thumbnails/2.jpg"
+              style="height: fit-content;width: fit-content;text-align: center;"
+              src="assets/img/portfolio/thumbnails/14.jpg"
               alt="..."
             />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Category</div>
-              <div class="project-name">Project Name</div>
-            </div>
-          </a>
+            <h4 class="h5 mb-3" style="display: block;text-align: center;color: #000;">Tunis</h4>
+
+           
+     
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a
-            class="portfolio-box"
-            href="assets/img/portfolio/fullsize/3.jpg"
-            title="Project Name"
-          >
+         
             <img
               class="img-fluid"
-              src="assets/img/portfolio/thumbnails/3.jpg"
+              style="height: fit-content;width: fit-content;"
+              src="assets/img/portfolio/thumbnails/9.jpg"
               alt="..."
             />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Category</div>
-              <div class="project-name">Project Name</div>
-            </div>
-          </a>
+            <h4 class="h5 mb-3" style="display: block;text-align: center;color: #000;">Ariana</h4>     
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a
-            class="portfolio-box"
-            href="assets/img/portfolio/fullsize/4.jpg"
-            title="Project Name"
-          >
-            <img
-              class="img-fluid"
-              src="assets/img/portfolio/thumbnails/4.jpg"
-              alt="..."
-            />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Category</div>
-              <div class="project-name">Project Name</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a
-            class="portfolio-box"
-            href="assets/img/portfolio/fullsize/5.jpg"
-            title="Project Name"
-          >
-            <img
-              class="img-fluid"
-              src="assets/img/portfolio/thumbnails/5.jpg"
-              alt="..."
-            />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Category</div>
-              <div class="project-name">Project Name</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <a
-            class="portfolio-box"
-            href="assets/img/portfolio/fullsize/6.jpg"
-            title="Project Name"
-          >
-            <img
-              class="img-fluid"
-              src="assets/img/portfolio/thumbnails/6.jpg"
-              alt="..."
-            />
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">Category</div>
-              <div class="project-name">Project Name</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+        
   </div>
   <!-- Call to action-->
   <section class="page-section bg-dark text-white">
     <div class="container px-4 px-lg-5 text-center">
-      <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-      <a
-        class="btn btn-light btn-xl"
-        href="https://startbootstrap.com/theme/creative/"
-        >Download Now!</a
-      >
+      <h2 class="mb-4">Rejoignez Urban Move </h2>
+      <img
+              class="img-fluid"
+              src="assets/img/portfolio/thumbnails/609.jpg"
+              alt="..."
+            />
     </div>
   </section>
   <!-- Contact-->
@@ -228,11 +179,10 @@
     <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="col-lg-8 col-xl-6 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
+          <h2 class="mt-0">Contactez-nous</h2>
           <hr class="divider" />
           <p class="text-muted mb-5">
-            Ready to start your next project with us? Send us a messages and we
-            will get back to you as soon as possible!
+            "Votre avis compte ! Écrivez-nous pour partager vos commentaires ou suggestions."
           </p>
         </div>
       </div>
@@ -255,7 +205,7 @@
                 placeholder="Enter your name..."
                 data-sb-validations="required"
               />
-              <label for="name">Full name</label>
+              <label for="name">Nom et Prénom</label>
               <div class="invalid-feedback" data-sb-feedback="name:required">
                 A name is required.
               </div>
@@ -269,7 +219,7 @@
                 placeholder="name@example.com"
                 data-sb-validations="required,email"
               />
-              <label for="email">Email address</label>
+              <label for="email">Email </label>
               <div class="invalid-feedback" data-sb-feedback="email:required">
                 An email is required.
               </div>
@@ -286,7 +236,7 @@
                 placeholder="(123) 456-7890"
                 data-sb-validations="required"
               />
-              <label for="phone">Phone number</label>
+              <label for="phone">Numéro de téléphone</label>
               <div class="invalid-feedback" data-sb-feedback="phone:required">
                 A phone number is required.
               </div>
@@ -336,26 +286,39 @@
                 id="submitButton"
                 type="submit"
               >
-                Submit
+                Envoyez
               </button>
             </div>
           </form>
         </div>
       </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-4 text-center mb-5 mb-lg-0">
-          <i class="bi-phone fs-2 mb-3 text-muted"></i>
-          <div>+1 (555) 123-4567</div>
-        </div>
-      </div>
+     
     </div>
   </section>
   <!-- Footer-->
-  <footer class="bg-light py-5">
-    <div class="container px-4 px-lg-5">
-      <div class="small text-center text-muted">
-        Copyright &copy; 2023 - Company Name
-      </div>
-    </div>
-  </footer>
+  <title>Footer Réseaux Sociaux</title>
+
+     <style>
+        /* Styles pour le footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+  <footer>
+    <!-- Liens vers les réseaux sociaux -->
+    <a href="https://www.facebook.com/votre-page" target="_blank">Facebook : UrbanMove.tn</a>
+    <a href="https://www.instagram.com/votre-page" target="_blank">Instagram : Urban_Move_tn</a>
+    <a href="https://twitter.com/votre-page" target="_blank">Twitter :UrbanMove</a>
+    <!-- Numéro de téléphone -->
+    <p>Numéro de téléphone : +123456789</p>
+</footer>
 </div>
