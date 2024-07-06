@@ -67,7 +67,7 @@ export class DashboardComponent implements OnInit {
               display: true,
               padding: 20,
               color: 'black',
-              text: 'Nobmre des utilisateur par gouvernerat',
+              text: '',
               font: {
                 size: 16,
               },
@@ -142,7 +142,7 @@ export class DashboardComponent implements OnInit {
               display: true,
               padding: 20,
               color: 'black',
-              text: 'Nobmre des utilisateur par age',
+              text: '',
               font: {
                 size: 16,
               },
