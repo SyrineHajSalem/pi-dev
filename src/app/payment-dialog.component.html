@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>Process Payment</h1>
+<div mat-dialog-content>
+  <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+    <div class="card-info">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Card Number</mat-label>
+        <input matInput formControlName="cardNumber" type="text" required>
+        <mat-icon matSuffix>credit_card</mat-icon>
+        <mat-error *ngIf="paymentForm.get('cardNumber')?.hasError('required')">
+          Card Number is required
+        </mat-error>
+        <mat-error *ngIf="paymentForm.get('cardNumber')?.hasError('pattern')">
+          Invalid Card Number
+        </mat-error>
+      </mat-form-field>
+
+      <div class="expiration-cvc">
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>MM/YY</mat-label>
+          <input matInput formControlName="expirationDate" type="text" required>
+          <mat-error *ngIf="paymentForm.get('expirationDate')?.hasError('required')">
+            Expiration Date is required
+          </mat-error>
+          <mat-error *ngIf="paymentForm.get('expirationDate')?.hasError('pattern')">
+            Invalid Expiration Date
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="half-width">
+          <mat-label>CVC</mat-label>
+          <input matInput formControlName="cvc" type="text" required>
+          <mat-error *ngIf="paymentForm.get('cvc')?.hasError('required')">
+            CVC is required
+          </mat-error>
+          <mat-error *ngIf="paymentForm.get('cvc')?.hasError('pattern')">
+            Invalid CVC
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div mat-dialog-actions>
+      <button mat-button type="button" (click)="onCancel()">Cancel</button>
+      <button mat-button color="primary" type="submit" [disabled]="!paymentForm.valid">Pay €{{ price }}</button>
+    </div>
+  </form>
+</div>

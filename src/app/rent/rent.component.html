@@ -1,0 +1,111 @@
+<div class="div-main">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#page-top">Urban Move</a>
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">Acceuil</a></li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/louez">louez</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="rent-component">
+    <div class="background-image">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Louer une trottinette ou un scooter</h5>
+            <div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="rentalType" class="form-label">Type de location</label>
+                  <select class="form-select" id="rentalType" aria-label="Sélectionnez le type de location" [(ngModel)]="type">
+                    <option value="trottinet">Trottinette</option>
+                    <option value="scooter">Scooter</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="startDate" class="form-label" >Date de début</label>
+                  <input type="date" class="form-control" id="startDate" [(ngModel)]="dateDebut">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="endDate" class="form-label" >Date de fin</label>
+                  <input type="date" class="form-control" id="endDate" [(ngModel)]="dateFin">
+                </div>
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Votre nom</label>
+                  <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Votre Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Entrez votre email"  [(ngModel)]="email">
+                </div>
+              </div>
+              <button type="submit" class="share-location-btn" (click)="rent()">Louer maintenant</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="orange-card">
+        <h1>LOUEZ HAUTE DE GAMME A PRIX ATTRACTIF</h1>
+        <h6>Location de trottinet et Scooter electrique premium au meilleur prix</h6>
+      </div>
+      <div class="">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-card">
+                  <div class="card-body">
+                    <h3>Vous êtes à la recherche d'une expérience de location pratique et sans tracas ? 
+                        <br> <br>Ne cherchez pas plus loin !
+                    </h3>
+                    <br>
+                    <h3>
+                        Nous allons vous trouver des points 
+                        de location à proximité.
+                    </h3>
+                    <button class="share-location-btn">
+                        partager votre localisation
+                    </button>
+                  </div>
+                </div>
+              </div>
+        
+            <div class="col-md-6">
+                <div class="card map-card">
+                  <div class="card-body">
+                    <app-google-maps [property]="property" (routeInfoReady)="onRouteInfoReady($event)"></app-google-maps>
+                  </div>
+                  <div *ngIf="routeInfos && routeInfos.length > 0" class="grid grid-cols-2 d-flex" style="justify-content: center;" >
+                    <div *ngFor="let routeInfo of routeInfos" class="grid grid-cols-3 py-4 maps-travel-item">
+                        <div><img *ngIf="iconUrls[routeInfo.travelMode]" [src]="iconUrls[routeInfo.travelMode]" alt="Travel Mode Icon" class="md-icon"></div>
+                        <div class="m-2">{{ routeInfo.distance }}</div>
+                        <div class="m-2">{{ routeInfo.duration }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+        </div>
+    </div> 
+  </div>
+</div>
+  

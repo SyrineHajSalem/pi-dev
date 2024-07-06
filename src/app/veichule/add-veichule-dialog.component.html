@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Add Veichule</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Marque</mat-label>
+    <input matInput [(ngModel)]="data.marque">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Modele</mat-label>
+    <input matInput [(ngModel)]="data.modele">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Etat</mat-label>
+    <input matInput [(ngModel)]="data.etats">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Type</mat-label>
+    <mat-select [(ngModel)]="data.type">
+      <mat-option value="trottinet">Trottinet</mat-option>
+      <mat-option value="scooter">Scooter</mat-option>
+    </mat-select>
+  </mat-form-field> <mat-form-field>
+    <mat-label>Price per Day</mat-label>
+    <input matInput type="number" [(ngModel)]="data.prixparjour" name="pricePerDay">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()">Save</button>
+</div>

@@ -1,0 +1,28 @@
+.paid-chip {
+    background-color: rgb(138, 222, 138);
+    display: inline-block;
+    padding: 0 12px;
+    height: 32px;
+    font-size: 13px;
+    line-height: 32px;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  
+  .not-paid-chip {
+    display: inline-block;
+    padding: 0 12px;
+    height: 32px;
+    font-size: 13px;
+    line-height: 32px;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: rgb(248, 110, 110);
+  }
+  
